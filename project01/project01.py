@@ -33,21 +33,25 @@ def parse_line(line: str) -> list:
     # Check if dictionary has allele frequency key
     if "AF_EXAC" in variant_info_dict:
         # Convert allele frequency value into float
-        AF_EXAC = float(variant_info_dict["AF_EXAC"])
+        af_exac = float(variant_info_dict["AF_EXAC"])
         # Check if variant is rare using allele frequency
-        if(AF_EXAC < rare_threshold):
+        if af_exac < rare_threshold:
             # Get all diseases for rare variant
-            diseases = variant_info_dict["CLNDN"].split("|")
+            if "CLNDN" in variant_info_dict:
+                diseases = variant_info_dict["CLNDN"].split("|")
 
-            # Append to associated diseases list excluding not_provided and not_specified
-            for disease in diseases:
-                if disease not in ("not_provided","not_specified"):
-                    associated_diseases.append(disease)
-            # Return Associated Diseases
-            return associated_diseases
+                # Append to associated diseases list excluding not_provided and not_specified
+                for disease in diseases:
+                    if disease not in ("not_provided","not_specified"):
+                        associated_diseases.append(disease)
+                # Return Associated Diseases
+                return associated_diseases
+            return []   # CLNDN not found but variant is rare
+        return []   # Variant exists but not rare
+
     else:
         # If allele frequencies does not indicate variant rareness or if not provided, return empty list
-        return []
+        return []   # AF_EXAC not found
 
 # Modify this function signature and fill in the details
 def read_file(filename: str) -> Counter:
@@ -74,10 +78,10 @@ def read_file(filename: str) -> Counter:
                 if disease_list:
                     disease_counter.update(disease_list)
         # Return dictionary
-        return(disease_counter)
+        return disease_counter
     except Exception as e:
         print(f"An error occurred while reading file: {e}")
 
 
 if __name__ == "__main__":
-    pprint(read_file("clinvar_20190923_short.vcf"))
+    pprint(read_file("../clinvar_20190923_short.vcf"))
