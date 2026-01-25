@@ -1,27 +1,14 @@
-# BINF6250_S26
+# Project 01 – Development Branch
 
-# Introduction
-Description of the project
+This branch contains collaborative development work for Project 01.
 
-# Pseudocode
-Put pseudocode in this box:
+## Summary
+Team members explored multiple approaches to parsing Variant Call Format (VCF) files and extracting relevant fields. Individual contributions were reviewed and consolidated into a finalized lexer implementation.
 
-```
-Some pseudocode here
-```
+## Repository Layout
+- `project01/` – Final implementation and formal project documentation
+- `individual_work/` – Individual drafts and exploratory scripts
+- `tests/` – Demonstration-based test cases
 
-# Successes
-Description of the team's learning points
-
-# Struggles
-Description of the stumbling blocks the team experienced
-
-# Personal Reflections
-## Group Leader
-Group leader's reflection on the project
-
-## Other member
-Other members' reflections on the project
-
-# Generative AI Appendix
-As per the syllabus
+## Notes
+The authoritative version of this project is maintained in the `project01/` directory and will be merged into `main` upon completion.
