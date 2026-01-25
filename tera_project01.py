@@ -38,6 +38,7 @@ def parse_line(line: str) -> list:
         if(AF_EXAC < rare_threshold):
             # Get all diseases for rare variant
             diseases = variant_info_dict["CLNDN"].split("|")
+
             # Append to associated diseases list excluding not_provided and not_specified
             for disease in diseases:
                 if disease not in ("not_provided","not_specified"):
