@@ -153,9 +153,14 @@ associated with rare variants and their number of occurrences.
 
 ## Group Leader:
 
-### Chantara Lazard
+### Chantera Lazard
 
-Group leader’s reflection on the project
+This project provided me an opportunity to engage with Python after a year of primarily working in R. Most of the syntax and flow came back naturally although W3 schools was also helpful! 
+
+Working with a VCF file was another aspect I quite enjoyed as these files show up in research and clinical contexts. Parsing VCF data through string manipulation and extraction of data strengthened my understanding of how to utilize the files and even to aid in preparation for downstream analysis. 
+
+Working collaboratively with a team with varied technical backgrounds and learning styles proved a challenge as we spent most of our time working towards understanding the problem and its underlying assumptions. We had three meetings concerning the pseudocode before we actually wrote any code.  Yet our implementation benefited as the coding proccess was straightforward once all of us were aligned.
+
 
 ## Other member(s)
 
