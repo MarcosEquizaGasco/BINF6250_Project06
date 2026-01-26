@@ -187,6 +187,10 @@ if not input properly, that data is completely worthless.
 
 ### Victoria Van Berlo
 
+This project was excellent for getting back into Python, and an introduction to developing algorithms as a group. It also provided valuable experience with getting aquainted with Git. This project provided an excellent refresher for data types and data structures, as well as file parsing and collecting data of interest. Developing the pseudocode as a group allowed us to create code that followed the same general flow, yet allowed for each of us to put own our spin on things. When we met back together to finalize the code, we had several different methods for some of the steps that we were able to choose the best implementation and do a bit of peer review to gain insight into each other's thought processes.
+
+The biggest challenge for this project was analyzing the input file to determine the best methods for parsing, as there were some tricky cases regarding delimiters, and proper order for narrowing down our search results. Our strengths in this project were our varied backgrounds and levels of experitise with both programming and biology, which allowed us many different ideas of how best to proceed at each step. Our internal peer review process really shined due to this aspect.
+
 # Generative AI Appendix
 
 Generative AI was not used for this assignment.
