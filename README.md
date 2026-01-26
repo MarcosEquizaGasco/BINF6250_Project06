@@ -8,3 +8,5 @@ Team members explored multiple approaches to parsing Variant Call Format (VCF) f
 ## Repository Layout
 - `project01/` – Final implementation and formal project documentation
 - `individual_work/` – Individual drafts and exploratory scripts
+
+**Note: Peer Reviewers, please review the files in the project01/ folder.** 
