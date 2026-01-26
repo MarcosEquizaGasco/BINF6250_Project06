@@ -84,4 +84,4 @@ def read_file(filename: str) -> Counter:
 
 
 if __name__ == "__main__":
-    pprint(read_file("../clinvar_20190923_short.vcf"))
+    pprint(read_file("clinvar_20190923_short.vcf"))
