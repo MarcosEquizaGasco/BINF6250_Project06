@@ -9,9 +9,8 @@ Some pseudocode here
 ```
 
 # Successes
-- Neighbor Joining we were able to understand together as we researched it and talk it out.
-- We were able to differentiate between neighbor joining and additive phylogenetic
-- Re-using the smith waterman and making it adaptable to the project. Also returning distance instead of similarity and converting to distance 
+
+Our group worked collaboratively to understand the Neighbor Joining algorithm by researching the concept and discussing it via an example as a team. Through this approach, we were able to differentiate between neighbor joining and other additive tree reconstruction methods grounding our overall understanding of phylogenetic tree construction. We also reused our previous Smith-Waterman algorithm and adapted it so that it returned distance scores instead of similarity scores for our analysis. 
 
 # Struggles
 - Newick
@@ -20,10 +19,11 @@ Some pseudocode here
 
 # Personal Reflections
 ## Group Leader
-Group leader's reflection on the project
+Chantera: 
 
 ## Other member
-Other members' reflections on the project
+Marcos:
+Meghana:
 
 # Generative AI Appendix
 As per the syllabus
