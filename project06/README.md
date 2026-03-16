@@ -9,10 +9,14 @@ Some pseudocode here
 ```
 
 # Successes
-Description of the team's learning points
+- Neighbor Joining we were able to understand together as we researched it and talk it out.
+- We were able to differentiate between neighbor joining and additive phylogenetic
+- Re-using the smith waterman and making it adaptable to the project. Also returning distance instead of similarity and converting to distance 
 
 # Struggles
-Description of the stumbling blocks the team experienced
+- Newick
+
+  
 
 # Personal Reflections
 ## Group Leader
