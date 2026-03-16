@@ -19,10 +19,12 @@ Our group worked collaboratively to understand the Neighbor Joining algorithm by
 
 # Personal Reflections
 ## Group Leader
-Chantera: 
+Chantera:
 
 ## Other member
 Marcos:
+
+
 Meghana:
 
 # Generative AI Appendix
