@@ -2,7 +2,7 @@
 This project implements the Neighbor-Joining algorithm to construct a phylogenetic tree from a set of sequences. Pairwise sequence distances are first calculated using the Smith-Waterman local alignment algorithm. The Neighbor-Joining algorithm iteratively joins pairs of nodes, creates internal nodes and calculates branch lengths. The final tree is converted to Newick format and visualized.
 
 # Pseudocode
-Put pseudocode in this box:
+
 
 ```
 1. Read input sequences from FASTA file.
