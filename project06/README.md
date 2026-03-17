@@ -1,11 +1,40 @@
 # Introduction
-Description of the project
+This project implements the Neighbor-Joining algorithm to construct a phylogenetic tree from a set of sequences. Pairwise sequence distances are first calculated using the Smith-Waterman local alignment algorithm. The Neighbor-Joining algorithm iteratively joins pairs of nodes, creates internal nodes and calculates branch lengths. The final tree is converted to Newick format and visualized.
 
 # Pseudocode
 Put pseudocode in this box:
 
 ```
-Some pseudocode here
+1. Read input sequences from FASTA file.
+
+2. Store sequences in a dictionary mapping the sequence ID to the sequence string
+
+3. Compute a distance matrix:
+        For each pair of sequences (i, j):
+            Align the sequences using the Smith-Waterman alignment.
+            Trace back the optimal alignment.
+            Compute the normalized Hamming distance between the aligned sequences.
+            Store the distance in a distance matrix
+
+4. Initialize a tree structure with each sequence as a leaf node.
+
+5. While n > 2:
+        Compute a Q-matrix using the current distance matrix.
+        identify the pair of nodes (i, j) with the minimum Q value.
+        Calculate the branch lengths from i and j to a new internal node k (di and dj respectively).
+        Add the internal node k to the tree and connect it to i and j with the branch lengths (di and dj).
+        Create a new matrix of size n-1.
+        Copy the distances between the remaining nodes into the new matrix.
+        Calculate and save the distances between the new node k and the remaining nodes into the new matrix.
+        Update the distance matrix.
+        Update the list of node labels.
+        Update n -> n -= 1.
+
+6. Convert the final tree structure into a Newick string format.
+
+7. Plot the phylogenetic tree from the Newick string.
+
+
 ```
 
 # Successes
@@ -25,7 +54,7 @@ Chantera: For this project, our group did not follow the approach discussed in c
 Marcos:
 
 
-Meghana:
+Meghana: The concept for this project was a little difficult for me to understand initially, particularly how the internal nodes of the tree were created based on the calculated distances and branch lengths. Our group spent a lot of time discussing the algorithm and we spent a significant amount of time on the pseudocode, making sure each of us understood the process. Once I understood how it worked, the implementation was much simpler.
 
 # Generative AI Appendix
 As per the syllabus
