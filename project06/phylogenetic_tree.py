@@ -42,7 +42,7 @@ class Tree:
                 return node_name
 
             # Iterate recursively through each neighbor and add the branch length --> create a list
-            parts = [f"{_build(nbr, node_name)}:{bl}" for nbr, bl in neighbors.items()]
+            parts = [f"{_build(nbr, node_name)}:{round(bl, 3)}" for nbr, bl in neighbors.items()]
             print(parts)
 
             # Internal nodes get no label in Newick string format
